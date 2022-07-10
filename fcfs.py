@@ -6,7 +6,7 @@ gantt_time=[min(at)]
 gantt_process=[]
 for i in range(n):
     min_index=at.index(min(at)) #finding index of smallenst element of at
-    gantt_process.append(min_index+1) 
+    gantt_process.append(min_index+1)
     at[min_index]=float('inf')
 for i in range(n):
     process=gantt_process[i] #current process
@@ -17,10 +17,8 @@ for i in range(n):
     gantt_time.append(gantt_time[-1]+y)
 tat_total=0
 wt_total=0
-print(gantt_process,gantt_time)
 gantt_time.pop(0)
 gantt=dict(zip(gantt_process,gantt_time)) #key=process no, values=CT
-print(gantt)
 print("P\tAT\tBT\tCT\tTAT\tWT\tRT")
 for i in range(n):
     ct=gantt[i+1]
