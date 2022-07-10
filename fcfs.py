@@ -1,3 +1,4 @@
+# Author: Riddhish V. Lichade
 at=[5,0,4,2,3,3] #arrival time
 at1=at.copy() #copy of arrival time
 bt=[2,1,8,4,5,6] #burst time
